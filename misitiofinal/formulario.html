@@ -1,0 +1,71 @@
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="dcc11b646cda1d1730e5da82bcdc0848_480x480_fit.png" alt="Logo" style="max-width: 200px; height: auto;">
+        </div>
+        <link rel="stylesheet" href="css/style.css">
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="introduccion.html">Introducción</a></li>
+            <li><a href="Causasdelaguerra.html">Causas de la Guerra</a></li>
+            <li><a href="principalesfrentres.html">Principales Frentes</a></li>
+            <li><a href="consecuenciasdelaguerra.html">Consecuencias</a></li>
+            <li><a href="personajesclave.html">Personajes Clave</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="#" name="solucionFormulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" maxlength="30">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="correo@empresa.com" maxlength="30">
+
+            <label for="asunto">Asunto</label>
+            <select name="asunto" id="asunto">
+                <option value="Informacionweb">Pedir Información Web</option>
+                <option value="CitaPrevia">Solicitar Cita Previa</option>
+                <option value="Otros">Otros</option>
+            </select>
+
+            <label for="marketing">¿Cómo nos has conocido?</label>
+            <div class="marketing">
+                <input type="checkbox" value="amigo" id="amigo"><label for="amigo">Un amigo</label>
+                <input type="checkbox" value="google" id="googleando"><label for="google">Googleando</label>
+                <input type="checkbox" value="redsocial" id="redsocial"><label for="redsocial">Red social</label>
+                <input type="checkbox" value="otros" id="otros"><label for="otros">Otros</label>
+            </div>
+
+            <label for="mensaje">Escribe tu mensaje</label>
+            <textarea name="mensaje" id="mensaje" maxlength="300"></textarea>
+
+            <input type="checkbox" value="Acepta_RGPD" id="rgpd" required>
+            <label for="rgpd" class="rgpd">He leído y acepto el <a href="#" target="_blank">aviso legal y la política de privacidad</a></label>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <section id="encuesta">
+            <h2>¿Qué te pareció el sitio?</h2>
+            <form id="formulario-encuesta">
+                <div>
+                    <label for="calificacion">Calificación general:</label>
+                    <select id="calificacion" name="calificacion">
+                        <option value="">Selecciona una opción</option>
+                        <option value="muy-bueno">Muy bueno</option>
+                        <option value="bueno">Bueno</option>
+                        <option value="regular">Regular</option>
+                        <option value="malo">Malo</option>
+                        <option value="muy-malo">Muy malo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="comentarios">Comentarios adicionales (opcional):</label>
+                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                </div>
+                <button type="submit">Enviar encuesta</button>
+            </form>
+        </section>
+    </main>
+</body>

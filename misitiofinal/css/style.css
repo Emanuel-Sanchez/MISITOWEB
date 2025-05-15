@@ -1,0 +1,355 @@
+/* Estilos generales del body */
+body {
+    font-family: 'Times New Roman', serif; /* Priorizando Times New Roman */
+    margin: 0;
+    padding: 0;
+    color: #000; /* Predominantemente negro para el texto */
+    background-color: #000; /* Fondo negro de respaldo (si la imagen falla) */
+    background-image: url('arton79216.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Cubre todo el fondo */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen al fondo */
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    background-color: #33333338;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100; /* Asegura que el header esté por encima de otros elementos */
+    box-sizing: border-box; /* Para un manejo más intuitivo del modelo de caja */
+    width: 100%; /* Ocupa todo el ancho del main */
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+header .logo-container img {
+    height: 80px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Estilos para la barra de navegación (nav) */
+nav {
+    background-color: #000; /* Fondo negro para el menú */
+    color: #fff; /* Texto blanco para el menú */
+    padding: 20px;
+    width: 200px;
+    min-height: 100vh; /* La barra lateral ocupa toda la altura */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; /* Fija la barra de navegación a la izquierda */
+    top: 0;
+    left: 0;
+    box-sizing: border-box; /* Para un manejo más intuitivo del modelo de caja */
+}
+
+nav h2 {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    margin-bottom: 15px; /* Mayor margen para el menú de personajes clave */
+}
+
+nav ul li a {
+    display: block;
+    color: #000; /* Letra negra para los enlaces del menú */
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #ddd;
+    transition: background-color 0.3s ease;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-sizing: border-box; /* Para un manejo más intuitivo del modelo de caja */
+}
+
+nav ul li a:hover {
+    background-color: #bbb;
+}
+
+/* Estilos para el contenedor del logo dentro del nav */
+nav .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-top: 20px;
+    box-sizing: border-box; /* Para un manejo más intuitivo del modelo de caja */
+}
+
+nav .logo-container img {
+    height: auto;
+    max-height: 150px;
+    width: auto;
+    display: block;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Para un manejo más intuitivo del modelo de caja */
+}
+
+/* Estilos para el contenedor principal del contenido */
+main {
+    padding: 20px;
+    flex-grow: 1; /* El contenido principal ocupa el espacio restante */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para el contenido */
+    color: #000; /* Predominantemente negro para el texto del contenido */
+    margin-left: 200px; /* Espacio para la barra de navegación fija */
+    display: flex;
+    flex-direction: column; /* Permite apilar header, contenido y footer dentro de main */
+    align-items: stretch; /* Estira los elementos hijos (header, sections, footer) */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    min-height: calc(100vh - /* Altura estimada del header y footer */ 60px); /* Asegura una altura mínima */
+}
+
+/* Estilos para las secciones dentro de main */
+main > section {
+    width: 100%; /* Las secciones ocupan todo el ancho disponible del main */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+main > section:last-child {
+    margin-bottom: 40px; /* Dar espacio al footer */
+}
+
+/* Estilos para los títulos dentro de main */
+main h1 {
+    color: #333; /* Un tono de gris para el h1 */
+    text-align: center;
+    box-sizing: border-box; /* Para un manejo más intuitivo del modelo de caja */
+    width: 100%; /* Ocupa todo el ancho del main */
+}
+
+main h2 {
+    color: #333; /* Un tono de gris para el h2 general */
+    text-align: center;
+    box-sizing: border-box; /* Para un manejo más intuitivo del modelo de caja */
+    width: 100%; /* Ocupa todo el ancho del main */
+}
+
+/* Estilos para los párrafos dentro de main */
+main p {
+    line-height: 1.6;
+    text-align: justify;
+    color: #000; /* Texto negro para los párrafos */
+    box-sizing: border-box; /* Para un manejo más intuitivo del modelo de caja */
+    width: 100%; /* Ocupa todo el ancho del main */
+}
+
+/* Estilos para las listas dentro de main */
+main ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.6;
+    text-align: justify;
+    box-sizing: border-box; /* Para un manejo más intuitivo del modelo de caja */
+    width: 100%; /* Ocupa todo el ancho del main */
+}
+
+main li {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box; /* Para un manejo más intuitivo del modelo de caja */
+    width: 100%; /* Ocupa todo el ancho del main */
+}
+
+/* Estilos específicos para la lista de personajes clave */
+#personajes-clave ul li {
+    border-bottom: 1px solid #ccc;
+}
+
+#personajes-clave ul li:last-child {
+    border-bottom: none;
+}
+
+li.personaje {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+li.personaje img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.personaje-info {
+    flex-grow: 1;
+}
+
+.personaje-info h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.personaje-info p {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    padding: 15px;
+    width: 100%;
+    margin: 20px auto;
+    box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho */
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: #4caf50;
+    color: rgb(245, 242, 242);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #12696d;
+}
+
+/* Estilos para el pie de página (footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%; /* Para que el footer ocupe todo el ancho del main */
+    z-index: 100; /* Asegura que el footer esté por encima de otros elementos */
+    margin-top: auto; /* Empuja el footer hacia la parte inferior del main */
+    box-sizing: border-box; /* Para un manejo más intuitivo del modelo de caja */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Apila los elementos en pantallas pequeñas */
+        align-items: stretch; /* Estira los elementos para ocupar el ancho */
+    }
+
+    nav {
+        width: 100%;
+        min-height: auto;
+        flex-direction: row; /* Muestra el menú horizontalmente */
+        align-items: center;
+        justify-content: space-around; /* Distribuye el espacio entre los elementos del menú */
+        padding: 10px;
+        flex-wrap: wrap; /* Permite que los elementos del menú se envuelvan */
+        position: static; /* La barra de navegación fluye con el contenido */
+    }
+
+    nav .logo-container {
+        flex-basis: 100%; /* El logo ocupa todo el ancho en pantallas pequeñas */
+        margin-bottom: 10px;
+        padding-top: 0;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+    }
+
+    main {
+        align-items: stretch; /* Estira el contenido principal */
+        align-items: flex-start; /* Alinea el contenido al inicio en pantallas pequeñas */
+        margin-left: 0; /* Elimina el margen para la barra lateral */
+    }
+
+    main > section {
+        width: 95%;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Times New Roman', serif;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    font-family: 'Times New Roman', serif;
+    text-align: justify;
+}
+
+th {
+    background-color: #f2f2f2;
+}
